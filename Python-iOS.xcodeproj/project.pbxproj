@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5A0583C72825671100A773AB /* Python_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A0583C62825671100A773AB /* Python_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A0583D02825690100A773AB /* Python-iOS in Frameworks */ = {isa = PBXBuildFile; productRef = 5A0583CF2825690100A773AB /* Python-iOS */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A0583D02825690100A773AB /* Python-iOS in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33,6 +35,7 @@
 				5A0583C52825671100A773AB /* Python-iOS */,
 				5A0583CD2825675100A773AB /* Python-iOS */,
 				5A0583C42825671100A773AB /* Products */,
+				5A0583CE2825690100A773AB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -50,6 +53,13 @@
 				5A0583C62825671100A773AB /* Python_iOS.h */,
 			);
 			path = "Python-iOS";
+			sourceTree = "<group>";
+		};
+		5A0583CE2825690100A773AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,6 +90,9 @@
 			dependencies = (
 			);
 			name = "Python-iOS";
+			packageProductDependencies = (
+				5A0583CF2825690100A773AB /* Python-iOS */,
+			);
 			productName = "Python-iOS";
 			productReference = 5A0583C32825671100A773AB /* Python_iOS.framework */;
 			productType = "com.apple.product-type.framework";
@@ -267,6 +280,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				EXCLUDED_ARCHS = "armv7 i386";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -295,6 +309,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				EXCLUDED_ARCHS = "armv7 i386";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -335,6 +350,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5A0583CF2825690100A773AB /* Python-iOS */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = "Python-iOS";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5A0583BA2825671000A773AB /* Project object */;
 }
