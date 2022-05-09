@@ -33,14 +33,15 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		5A8512B1282941F400F6B18A /* libssl.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A8512AD282941F400F6B18A /* libssl.xcframework */; };
-		5A8512B2282941F400F6B18A /* libssl.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5A8512AD282941F400F6B18A /* libssl.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5A8512B3282941F400F6B18A /* libffi.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A8512AE282941F400F6B18A /* libffi.xcframework */; };
-		5A8512B4282941F400F6B18A /* libffi.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5A8512AE282941F400F6B18A /* libffi.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5A8512B5282941F400F6B18A /* libcrypto.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A8512AF282941F400F6B18A /* libcrypto.xcframework */; };
-		5A8512B6282941F400F6B18A /* libcrypto.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5A8512AF282941F400F6B18A /* libcrypto.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5A8512B7282941F400F6B18A /* libpython3.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A8512B0282941F400F6B18A /* libpython3.xcframework */; };
-		5A8512B8282941F400F6B18A /* libpython3.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5A8512B0282941F400F6B18A /* libpython3.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5A8512C4282950CA00F6B18A /* resource_bundle_accessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8512C3282950CA00F6B18A /* resource_bundle_accessor.swift */; };
+		5A8512C5282950EA00F6B18A /* libcrypto.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A8512AF282941F400F6B18A /* libcrypto.xcframework */; };
+		5A8512C7282950EA00F6B18A /* libffi.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A8512AE282941F400F6B18A /* libffi.xcframework */; };
+		5A8512C9282950EA00F6B18A /* libpython3.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A8512B0282941F400F6B18A /* libpython3.xcframework */; };
+		5A8512CB282950EB00F6B18A /* libssl.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A8512AD282941F400F6B18A /* libssl.xcframework */; };
+		5A8512CE2829510200F6B18A /* libcrypto.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A8512AF282941F400F6B18A /* libcrypto.xcframework */; };
+		5A8512D02829510300F6B18A /* libffi.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A8512AE282941F400F6B18A /* libffi.xcframework */; };
+		5A8512D22829510300F6B18A /* libpython3.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A8512B0282941F400F6B18A /* libpython3.xcframework */; };
+		5A8512D42829510300F6B18A /* libssl.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A8512AD282941F400F6B18A /* libssl.xcframework */; };
 		OBJ_32 /* PythonSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* PythonSupport.m */; };
 		OBJ_46 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_57 /* SwiftBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* SwiftBundle.swift */; };
@@ -96,28 +97,12 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		5A8512B9282941F400F6B18A /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				5A8512B2282941F400F6B18A /* libssl.xcframework in Embed Frameworks */,
-				5A8512B8282941F400F6B18A /* libpython3.xcframework in Embed Frameworks */,
-				5A8512B4282941F400F6B18A /* libffi.xcframework in Embed Frameworks */,
-				5A8512B6282941F400F6B18A /* libcrypto.xcframework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		5A8512AD282941F400F6B18A /* libssl.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libssl.xcframework; path = Frameworks/libssl.xcframework; sourceTree = "<group>"; };
 		5A8512AE282941F400F6B18A /* libffi.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libffi.xcframework; path = Frameworks/libffi.xcframework; sourceTree = "<group>"; };
 		5A8512AF282941F400F6B18A /* libcrypto.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libcrypto.xcframework; path = Frameworks/libcrypto.xcframework; sourceTree = "<group>"; };
 		5A8512B0282941F400F6B18A /* libpython3.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libpython3.xcframework; path = Frameworks/libpython3.xcframework; sourceTree = "<group>"; };
+		5A8512C3282950CA00F6B18A /* resource_bundle_accessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = resource_bundle_accessor.swift; path = Frameworks/resource_bundle_accessor.swift; sourceTree = "<group>"; };
 		OBJ_11 /* PythonSupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PythonSupport.h; sourceTree = "<group>"; };
 		OBJ_12 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = "/Volumes/SSD_R5/Development_R5/Python-iOS/Python-iOS.xcodeproj/GeneratedModuleMap/LinkPython/module.modulemap"; sourceTree = "<group>"; };
 		OBJ_14 /* SwiftBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftBundle.swift; sourceTree = "<group>"; };
@@ -130,7 +115,7 @@
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		OBJ_9 /* PythonSupport.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PythonSupport.m; sourceTree = "<group>"; };
 		"python-ios::LinkPython::Product" /* LinkPython.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LinkPython.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"python-ios::PythonSupport::Product" /* PythonSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PythonSupport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"python-ios::PythonSupport::Product" /* PythonSupport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PythonSupport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"python-ios::PythonTests::Product" /* PythonTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = PythonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -139,10 +124,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				5A8512B1282941F400F6B18A /* libssl.xcframework in Frameworks */,
-				5A8512B7282941F400F6B18A /* libpython3.xcframework in Frameworks */,
-				5A8512B3282941F400F6B18A /* libffi.xcframework in Frameworks */,
-				5A8512B5282941F400F6B18A /* libcrypto.xcframework in Frameworks */,
+				5A8512C5282950EA00F6B18A /* libcrypto.xcframework in Frameworks */,
+				5A8512C9282950EA00F6B18A /* libpython3.xcframework in Frameworks */,
+				5A8512CB282950EB00F6B18A /* libssl.xcframework in Frameworks */,
+				5A8512C7282950EA00F6B18A /* libffi.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +135,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
+				5A8512D02829510300F6B18A /* libffi.xcframework in Frameworks */,
+				5A8512D22829510300F6B18A /* libpython3.xcframework in Frameworks */,
+				5A8512D42829510300F6B18A /* libssl.xcframework in Frameworks */,
+				5A8512CE2829510200F6B18A /* libcrypto.xcframework in Frameworks */,
 				OBJ_59 /* LinkPython.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -223,9 +212,10 @@
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
+				5A8512C3282950CA00F6B18A /* resource_bundle_accessor.swift */,
 				OBJ_6 /* Package.swift */,
 				OBJ_7 /* Sources */,
 				OBJ_15 /* Tests */,
@@ -236,7 +226,6 @@
 				OBJ_26 /* README.md */,
 				5A8512AC282941F400F6B18A /* Frameworks */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
@@ -267,7 +256,6 @@
 			buildPhases = (
 				OBJ_31 /* Sources */,
 				OBJ_33 /* Frameworks */,
-				5A8512B9282941F400F6B18A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -343,7 +331,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_19 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -379,6 +367,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				5A8512C4282950CA00F6B18A /* resource_bundle_accessor.swift in Sources */,
 				OBJ_57 /* SwiftBundle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -477,6 +466,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_NS_ASSERTIONS = YES;
+				EXCLUDED_ARCHS = armv7;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
@@ -556,6 +546,7 @@
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				EXCLUDED_ARCHS = armv7;
 				GCC_OPTIMIZATION_LEVEL = s;
 				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
