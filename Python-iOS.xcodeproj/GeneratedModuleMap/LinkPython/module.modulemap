@@ -1,0 +1,4 @@
+module LinkPython {
+    umbrella "/Volumes/SSD_R5/Development_R5/Python-iOS/Sources/LinkPython/include"
+    export *
+}

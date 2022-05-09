@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5A0583C22825671000A773AB"
-               BuildableName = "Python_iOS.framework"
+               BlueprintIdentifier = "python-ios::Python-iOS::ProductTarget"
+               BuildableName = "Python-iOS"
                BlueprintName = "Python-iOS"
                ReferencedContainer = "container:Python-iOS.xcodeproj">
             </BuildableReference>
@@ -31,7 +31,7 @@
       </Testables>
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Release"
+      buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
@@ -50,8 +50,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5A0583C22825671000A773AB"
-            BuildableName = "Python_iOS.framework"
+            BlueprintIdentifier = "python-ios::Python-iOS::ProductTarget"
+            BuildableName = "Python-iOS"
             BlueprintName = "Python-iOS"
             ReferencedContainer = "container:Python-iOS.xcodeproj">
          </BuildableReference>
